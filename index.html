@@ -3,35 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoş Geldiniz</title>
+    <title>League of Legends Bilgilendirme</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #00b4db, #0083b0);
-            color: white;
-            margin-top: 20%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #091428, #0a1428);
+            color: #f0e6d2;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            font-size: 3em;
+        header {
+            text-align: center;
+            padding: 40px 10px;
+            background-color: #1e2328;
+        }
+        header h1 {
+            color: #c8aa6e;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .champions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .champion {
+            background-color: #1e2328;
+            border: 2px solid #c8aa6e;
+            border-radius: 8px;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+        }
+        .champion img {
+            width: 100%;
+            border-radius: 5px;
         }
         button {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: white;
-            color: #0083b0;
+            background-color: #c8aa6e;
+            color: #0a1428;
             border: none;
+            padding: 10px 20px;
             border-radius: 5px;
+            font-size: 1em;
             cursor: pointer;
+            transition: 0.3s;
         }
         button:hover {
-            background-color: #f1f1f1;
+            background-color: #e0c88c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e2328;
+            color: #999;
         }
     </style>
 </head>
 <body>
-    <h1>Web Siteme Hoş Geldiniz!</h1>
-    <p>Ziyaret ettiğiniz için teşekkürler 💙</p>
-    <button onclick="window.location.href='https://ornek-link.com'">Devam Et</button>
+    <header>
+        <h1>League of Legends Bilgilendirme</h1>
+        <p>Runeterra dünyasına hoş geldin!</p>
+    </header>
+
+    <section>
+        <h2>Oyun Hakkında</h2>
+        <p>
+            <strong>League of Legends (LoL)</strong>, Riot Games tarafından geliştirilen çok oyunculu çevrimiçi bir savaş arenası oyunudur.
+            Oyuncular “şampiyon” adı verilen karakterleri kontrol eder ve rakip takımı yok etmeye çalışır.
+        </p>
+    </section>
+
+    <section>
+        <h2>Popüler Şampiyonlar</h2>
+        <div class="champions">
+            <div class="champion">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="Ahri">
+                <h3>Ahri</h3>
+                <p>Büyü gücüyle rakiplerini baştan çıkaran dokuz kuyruklu tilki.</p>
+            </div>
+            <div class="champion">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" alt="Yasuo">
+                <h3>Yasuo</h3>
+                <p>Rüzgarın ustası ve onurunu yeniden kazanmak için savaşan bir kılıç ustası.</p>
+            </div>
+            <div class="champion">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Jinx">
+                <h3>Jinx</h3>
+                <p>Kaosu seven çılgın silahşor, Zaun sokaklarının yaramaz kızı.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align:center; margin-top:30px;">
+        <button onclick="window.open('https://www.leagueoflegends.com/tr-tr/', '_blank')">Resmi Siteye Git</button>
+    </section>
+
+    <footer>
+        <p>Bu site yalnızca bilgilendirme amaçlıdır. Tüm haklar Riot Games’e aittir.</p>
+    </footer>
 </body>
 </html>
